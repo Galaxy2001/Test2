@@ -1,0 +1,76 @@
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e
+$ git init anew
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e
+$ cd anew
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (master)
+$ git commit -m "create repo"
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (master)
+$ git remote add origin https://github.com/Galaxy2001/anew.git
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (master)
+$ git push -u origin master
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (master)
+$ touch hello.txt
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (master)
+$ git add .
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (master)
+$ git commit -m "create file"
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (master)
+$ git checkout hello.txt
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (master)
+$ echo "Hello word" >> hello.txt
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (master)
+$ git add hello.txt
+warning: LF will be replaced by CRLF in hello.txt.
+The file will have its original line endings in your working directory
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (master)
+$ git commit -m "update file"
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (master)
+$ git checkout -b branch1
+Switched to a new branch 'branch1'
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (branch1)
+$ touch mybranch.txt
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (branch1)
+$ git add mybranch.txt
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (branch1)
+$ git commit -m "create branch1"
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (branch1)
+$ git checkout -b branch2
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (branch2)
+$ touch mybranch.txt
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (branch2)
+$ git add mybranch.txt
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (branch2)
+$ git commit -m "create branch2"
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (branch2)
+$ git checkout master
+Switched to branch 'master'
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (master)
+$ git push -u origin master
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (master)
+$ git push -u origin branch1
+
+Sony@DESTOPSony-MariaPlus MINGW64 /e/anew (master)
+$ git push -u origin branch2
